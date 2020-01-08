@@ -1,0 +1,1752 @@
+@charset "utf-8";
+/*
+/*	Copyright (c) 2018 Marketify
+/*	Author: Marketify
+/*	This file is made for CURRENT TEMPLATE
+
+
+	01) AOLA BASE
+	02) AOLA HEADER
+	03) AOLA MOBILE MENU
+	04) AOLA HAMBURGER
+	05) AOLA CONTENT
+	06) AOLA ABOUT
+	07)	AOLA SERVICE
+	08)	AOLA PORTFOLIO
+	09)	AOLA PORTFOLIO SINGLE
+	10) AOLA NEWS
+	11) AOLA NEWS SINGLE
+	12) AOLA CONTACT
+	13) AOLA MEDIA QUERIES (FOR SMALL DEVIVES)
+	
+
+/*---------------------------------------------------*/
+/*	01) AOLA BASE
+/*---------------------------------------------------*/
+
+html {
+	overflow-x: hidden;
+	padding: 0px;
+	margin: 0px
+}
+body{
+	font-family: "Open Sans";
+	font-size: 14px;
+	line-height: 2.5;
+	letter-spacing: 1px;
+	word-wrap: break-word;
+	font-weight: 400;
+	background-color: #fff;
+	text-align: left;
+}
+svg{
+	fill: currentcolor;
+	width: 15px;
+	height: 15px;
+}
+img.svg{
+	width: 15px;
+	height: 15px;
+}
+.aola_tm_wrapper_all,
+.aola_tm_section,
+.aola_tm_content{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */ 
+}
+.aola_tm_content{
+	position: relative;
+	z-index: 1;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #000;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #000;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #000;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #000;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #000;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color: #000;
+}
+
+/*---------------------------------------------------*/
+/*	02) AOLA HEADER
+/*---------------------------------------------------*/
+
+.aola_tm_header{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: fixed;
+	top: 0px;
+	z-index: 5555;
+	
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_header.scroll{background-color: rgba(255,255,255,.97);}
+.aola_tm_header.scroll .aola_tm_navigation_wrap .menu > ul > li a{color: #000;}
+.aola_tm_header.scroll .aola_tm_navigation_wrap .social_icons_wrap > ul > li a{color: #000;}
+.aola_tm_header.scroll .aola_tm_navigation_wrap .menu > ul > li a:hover{color: #fa2856;}
+.aola_tm_header.scroll .aola_tm_navigation_wrap .social_icons_wrap > ul > li a:hover{color: #fa2856;}
+.aola_tm_navigation_wrap,
+.aola_tm_navigation_wrap .navigation_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_navigation_wrap{
+	min-height: 38px;	
+	line-height: 38px;
+	padding: 35px 0px;
+	
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	        transition: all .5s ease;
+}
+.aola_tm_header.scroll .aola_tm_navigation_wrap{padding: 24px 0px;}
+.aola_tm_navigation_wrap .navigation_inner{position: relative;}
+.aola_tm_navigation_wrap .logo{
+	position: absolute;
+	left: 0px;
+	top: -3px;
+}
+.aola_tm_navigation_wrap .nav_list_wrap{
+	width: auto;
+	height: auto;
+	clear: both;
+	float: right;
+	position: relative;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_navigation_wrap .menu > ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.aola_tm_navigation_wrap .menu > ul > li{
+	margin: 0px 30px 0px 0px;
+	display:inline-block; 
+}
+.aola_tm_navigation_wrap .menu > ul > li:last-child{margin-right: 0px;}
+.aola_tm_navigation_wrap .menu > ul > li a{
+	text-decoration: none;
+	color: #000;
+	font-family: "Quicksand";
+	font-size: 16px;
+	font-weight: 600;
+	display: inline-block;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.aola_tm_navigation_wrap .menu > ul > li a:hover{color: #fa2856;}
+
+/*---------------------------------------------------*/
+/*	03) AOLA MOBILE MENU
+/*---------------------------------------------------*/
+
+.aola_tm_mobile_menu_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: rgba(255,255,255,.95);
+	padding: 50px 20px;
+	display: none;
+	border-bottom: 1px solid rgba(0,0,0,.09);
+	border-top: 1px solid rgba(0,0,0,.09);
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */	
+}
+.aola_tm_mobile_menu_wrap .mob_menu{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_mobile_menu_wrap .mob_menu > ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.aola_tm_mobile_menu_wrap .mob_menu > ul > li{margin: 0px 0px 10px 0px;}
+.aola_tm_mobile_menu_wrap .mob_menu > ul > li:last-child{margin-bottom: 0px;}
+.aola_tm_mobile_menu_wrap .mob_menu > ul > li a{
+	text-decoration: none;
+	color: #000;
+	font-family: "Quicksand";
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.7;
+}
+
+/*---------------------------------------------------*/
+/*	04) AOLA HAMBURGER
+/*---------------------------------------------------*/
+
+.aola_tm_trigger{
+	position: absolute;
+	right: 0px;
+	top: 11px;
+	display: none;
+}
+.aola_tm_trigger .hamburger{
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+.aola_tm_trigger .hamburger-box{
+    width: 30px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+}
+.aola_tm_trigger .hamburger-inner{
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+.aola_tm_trigger .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+    width: 30px;
+    height: 2px;
+    background-color: #333333;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+	
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	        border-radius: 4px;
+}
+.aola_tm_trigger .hamburger-inner::before,
+.aola_tm_trigger .hamburger-inner::after{
+    content: "";
+    display: block;
+}
+.aola_tm_trigger .hamburger-inner::before{top: -8px;}
+.aola_tm_trigger .hamburger-inner::after{ bottom: -10px;}
+.aola_tm_trigger .hamburger--collapse-r .hamburger-inner{
+    top: auto;
+    bottom: 0;
+    transition-duration: 0.13s;
+    transition-delay: 0.13s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.aola_tm_trigger .hamburger--collapse-r .hamburger-inner::after{
+    top: -16px;
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
+}
+.aola_tm_trigger .hamburger--collapse-r .hamburger-inner::before{
+    transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.aola_tm_trigger .hamburger--collapse-r.is-active .hamburger-inner{
+    transform: translate3d(0, -10px, 0) rotate(45deg);
+    transition-delay: 0.22s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.aola_tm_trigger .hamburger--collapse-r.is-active .hamburger-inner::after{
+    top: 0;
+    opacity: 0;
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
+}
+.aola_tm_trigger .hamburger--collapse-r.is-active .hamburger-inner::before{
+    top: 0;
+    transform: rotate(90deg);
+    transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.aola_tm_trigger .hamburger{
+	padding: 0px;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+.aola_tm_trigger .hamburger-box{display: block;}
+.aola_tm_trigger .hamburger .hamburger-inner::before,
+.aola_tm_trigger .hamburger .hamburger-inner::after,
+.aola_tm_trigger .hamburger .hamburger-inner{
+	background-color: #000;
+	width: 30px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+
+/*---------------------------------------------------*/
+/*	05) AOLA CONTENT
+/*---------------------------------------------------*/
+
+.aola_tm_home_title_wrap{
+	width: 100%;
+	height: auto;
+	float: left;
+	clear: both;
+	text-align: left;
+	max-width: 600px;
+	margin-bottom: 195px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_home_title_wrap.index{margin-bottom: 173px}
+.aola_tm_home_title_wrap.about{margin-bottom: 185px}
+.aola_tm_home_title_wrap.service{margin-bottom: 185px}
+.aola_tm_home_title_wrap.portfolio{margin-bottom: 172px}
+.aola_tm_home_title_wrap.single{margin-bottom: 175px}
+.aola_tm_home_title_wrap.contact{margin-bottom: 175px}
+.aola_tm_home_title_wrap.news{margin-bottom: 185px}
+.aola_tm_home_title_wrap .inner{padding-top: 133px;}
+.aola_tm_home_title_wrap.portfolio .inner{padding-top: 125px;}
+.aola_tm_home_title_wrap h3{
+	color: #000;
+	position: relative;
+}
+.aola_tm_home_title_wrap h3 .animate{
+	display: block;
+	overflow: hidden;
+}
+.aola_tm_home_title_wrap h3 .animate .color{color: #fa2856;}
+.aola_tm_home_title_wrap h3 .animate > span{
+	position: relative;
+	display: block;
+	transform: translateY(100%);
+	
+	-webkit-transition: all 1s ease;
+	   -moz-transition: all 1s ease;
+	    -ms-transition: all 1s ease;
+	     -o-transition: all 1s ease;
+	        transition: all 1s ease;
+}
+.aola_tm_home_title_wrap.appear h3 .animate:nth-child(1) > span{
+	transition-delay: 0.1s;
+	transform: translateY(0%);
+}
+.aola_tm_home_title_wrap.appear h3 .animate:nth-child(2) > span{
+	transition-delay: 0.3s;
+	transform: translateY(0%);
+}
+.aola_tm_portfolio_home_wrap{
+	width: 100%;
+	max-width: 1380px;
+	height: auto;
+	clear: both;
+	margin: 0px auto 170px auto;
+	padding: 0px 40px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_portfolio_home_wrap .item{
+	float: left;
+	overflow: hidden;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_portfolio_home_wrap .item .inner{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.aola_tm_portfolio_home_wrap .image{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.aola_tm_portfolio_home_wrap .image_overlay{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: rgba(0,0,0,.6);
+	z-index: 2;
+	
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+	
+	opacity: 0;
+	visibility: hidden;
+}
+.aola_tm_portfolio_home_wrap .image_definition{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 3;
+	
+	opacity: 0;
+	visibility: hidden;
+}
+.aola_tm_portfolio_home_wrap .image_definition .title a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+	display: inline-block;
+	font-family: "Quicksand";
+	font-size: 16px;
+}
+.aola_tm_portfolio_home_wrap .link{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+}
+.aola_tm_portfolio_home_wrap .link a{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	font-family: "Quicksand";
+}
+.aola_tm_portfolio_home_wrap .item:hover .image{transform: scale(1.1,1.1) translateZ(0);} 
+.aola_tm_portfolio_home_wrap .item:hover .image_overlay{
+	opacity: 1;
+	visibility: visible;
+}
+.aola_tm_portfolio_home_wrap .item:hover .image_definition{
+	opacity: 1;
+	visibility: visible;
+}
+.aola_tm_short_contact_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: #f1f1f1;
+	text-align: center;
+	padding: 183px 20px 210px 20px;
+	margin-bottom: 188px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_short_contact_wrap .inner{
+	max-width: 550px;
+	margin: 0px auto;
+}
+.aola_tm_short_contact_wrap .title{margin-bottom: 40px;}
+.aola_tm_short_contact_wrap .title h3{
+	color: #000;
+	font-size: 30px;
+}
+.aola_tm_button{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	text-align: center;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_button a{
+	text-decoration: none;
+	color: #fff;
+	background-color: #000;
+	font-family: "Quicksand";
+	font-weight: 600;
+	padding: 16px 40px 18px 40px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.aola_tm_button a:hover{
+	background-color: #fa2856;
+	color: #fff;
+}
+.aola_tm_footer_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 188px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_footer_wrap .sharebox{padding-right: 30px;}
+.aola_tm_footer_wrap .sharebox label{
+	color: #fa2856;
+	font-family: "Quicksand";
+	font-weight: 600;
+	font-size: 16px;
+}
+.aola_tm_footer_wrap .share_wrap{padding-top: 10px;}
+.aola_tm_footer_wrap .share_wrap ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.aola_tm_footer_wrap .share_wrap ul li{
+	margin: 0px 8px 0px 0px;
+	display: inline-block;
+	position: relative;
+	left: -5px;
+}
+.aola_tm_footer_wrap .share_wrap ul li:last-child{margin-right: 0px;}
+.aola_tm_footer_wrap .share_wrap ul li a{
+	text-decoration: none;
+	color: #000;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.aola_tm_footer_wrap .share_wrap ul li a:hover{color: #fa2856;}
+.aola_tm_footer_wrap .copyright{text-align:right;}
+.aola_tm_footer_wrap .copyright label{
+	color: #fa2856;
+	font-family: "Quicksand";
+	font-weight: 600;
+	font-size: 16px;
+}
+.aola_tm_footer_wrap .copyright p{	
+	color: #000;
+	padding-top: 10px;
+	font-weight: 500;
+}
+
+/*---------------------------------------------------*/
+/*	06) AOLA ABOUT
+/*---------------------------------------------------*/
+
+.aola_tm_about_top_image{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 190px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_universal_box_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_universal_box_wrap .bg_wrap{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+}
+.aola_tm_universal_box_wrap .overlay_image{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 15;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.aola_tm_universal_box_wrap .overlay_video{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 15;
+	overflow: hidden;
+}
+.aola_tm_universal_box_wrap .overlay_video video{
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	object-fit: cover;
+}
+.aola_tm_universal_box_wrap .overlay_color{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 20;
+}
+.aola_tm_universal_box_wrap .overlay_image.about{background-image: url(..//img/jarallax/1.jpg);}
+.aola_tm_universal_box_wrap .overlay_color.about{background-color: rgba(0,0,0,.2);}
+.aola_tm_universal_box_wrap .content.about{padding: 230px 0px;}
+.aola_tm_universal_box_wrap .overlay_color.portfolio{background-color: rgba(0,0,0,.2);}
+.aola_tm_universal_box_wrap .content.portfolio{padding: 230px 0px;}
+.aola_tm_universal_box_wrap .overlay_color.news{background-color: rgba(0,0,0,.2);}
+.aola_tm_universal_box_wrap .content.news{padding: 230px 0px;}
+.aola_tm_universal_box_wrap .overlay_image.service{background-image: url(..//img/jarallax/5.jpg);}
+.aola_tm_universal_box_wrap .overlay_color.service{background-color: rgba(0,0,0,.2);}
+.aola_tm_universal_box_wrap .content.service{padding: 230px 0px;}
+.aola_tm_twice_box_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	margin-bottom: 175px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_twice_box_wrap.about{
+	margin-bottom: 169px;
+	padding-top: 15px;
+}
+.aola_tm_twice_box_wrap.about .title.team{margin-bottom: 20px;}
+.aola_tm_twice_box_wrap.service{margin-bottom: 188px;}
+.aola_tm_twice_box_wrap.single{margin-bottom: 190px;}
+.aola_tm_twice_box_wrap.contact{margin-bottom: 175px;}
+.aola_tm_twice_box_wrap .leftbox{
+	width: 40%;
+	float: left;
+	padding-right: 50px;
+}
+.aola_tm_twice_box_wrap .leftbox .title h3{
+	color: #000;
+	font-size: 25px;
+}
+.aola_tm_twice_box_wrap .leftbox .title.portfolio h3{
+	margin-bottom: 11px;
+}
+.aola_tm_twice_box_wrap .rightbox{
+	width: 60%;
+	float: right;
+}
+.aola_tm_twice_box_wrap.contact .rightbox{padding-left: 50px;}
+.aola_tm_twice_box_wrap .rightbox .about_text_wrap p{color: #333;}
+.aola_tm_twice_box_wrap .rightbox .awwwards_list{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_twice_box_wrap .rightbox .awwwards_list ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.aola_tm_twice_box_wrap .rightbox .awwwards_list ul li{
+	margin: 0px;
+	padding-right: 20px;
+}
+.aola_tm_twice_box_wrap .rightbox .awwwards_list ul li span{
+	color: #000;
+	position: relative;
+	margin-right: 24px;
+	padding-right: 15px;
+	font-weight: 600;
+	padding-left: 25px;
+	font-family: "Quicksand";
+}
+.aola_tm_twice_box_wrap .rightbox .awwwards_list ul li p{color: #333;}
+.aola_tm_twice_box_wrap .rightbox .awwwards_list ul li span:before{
+	position: absolute;
+	content: "";
+	width: 12px;
+	height: 1px;
+	background-color: #000;
+	top: 50%;
+	left: 100%;
+}
+.aola_tm_twice_box_wrap .rightbox .awwwards_list ul li span:after{
+	position: absolute;
+	content: "";
+	width: 5px;
+	height: 5px;
+	background-color: #000;
+	border-radius: 100%;
+	top: 50%;
+	left: 0px;
+	margin-top: -2px;
+}
+.aola_tm_twice_box_wrap .rightbox .team_list{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_twice_box_wrap .rightbox .team_list > ul{
+	margin: 0px 0px 0px -30px;
+	list-style-type: none;
+}
+.aola_tm_twice_box_wrap .rightbox .team_list > ul > li{
+	margin: 0px 0px 30px 0px;
+	width: 33.3333%;
+	float: left;
+	padding-left: 30px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_twice_box_wrap .rightbox .team_list ul li .inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_twice_box_wrap .rightbox .team_list ul li .inner .image{
+	width: 100%;
+	position: relative;
+	float: left;
+}
+.aola_tm_twice_box_wrap .rightbox .team_list ul li .inner .image .image_inner{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.aola_tm_twice_box_wrap .rightbox .team_list ul li .definition_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 30px 20px 24px 20px;
+	text-align: center;
+	background-color: #f1f1f1;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_twice_box_wrap .rightbox .team_list ul li .definition_wrap h3{
+	color: #000;
+	font-size: 17px;
+	line-height: 1.2;
+	margin-bottom: 4px;
+}
+.aola_tm_twice_box_wrap .rightbox .team_list ul li .definition_wrap span{
+	color: #333;
+	font-weight: 500;
+	line-height: 1;
+}
+.aola_tm_twice_box_wrap .rightbox .team_list .social_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding-top: 8px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_twice_box_wrap .rightbox .team_list .social_wrap > ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.aola_tm_twice_box_wrap .rightbox .team_list .social_wrap > ul li{
+	margin: 0px 10px 0px 0px;
+	display: inline-block;
+}
+.aola_tm_twice_box_wrap .rightbox .team_list .social_wrap > ul li:last-child{margin-right: 0px;}
+.aola_tm_twice_box_wrap .rightbox .team_list .social_wrap > ul li a{
+	text-decoration: none;
+	color: #000;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.aola_tm_twice_box_wrap .rightbox .team_list .social_wrap > ul li a:hover{color: #fa2856;}
+
+/*---------------------------------------------------*/
+/*	07) AOLA SERVICE
+/*---------------------------------------------------*/
+
+.aola_tm_service_top_image{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 188px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_twice_box_wrap .service_list_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_twice_box_wrap .service_list_wrap ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.aola_tm_twice_box_wrap .service_list_wrap ul li{
+	margin: 0px;
+	width: 33.3333%;
+	float: left;
+	position: relative;
+	padding-left: 20px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_twice_box_wrap .service_list_wrap ul li:after{
+	position: absolute;
+	content: "";
+	width: 5px;
+	height: 5px;
+	background-color: #000;
+	border-radius: 100%;
+	top: 50%;
+	left: 0px;
+	margin-top: -3px;
+}
+.aola_tm_twice_box_wrap .service_list_wrap ul li .inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	padding-right: 30px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_twice_box_wrap .service_list_wrap ul li:last-child .inner{padding-right: 0px;}
+.aola_tm_twice_box_wrap .service_list_wrap ul li p{color: #333;}
+
+/*---------------------------------------------------*/
+/*	08) AOLA PORTFOLIO
+/*---------------------------------------------------*/
+
+.aola_tm_portfolio_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 170px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */ 
+}
+.aola_tm_portfolio_filter{
+	width:100%;
+	height: auto;
+	text-align:left;
+	list-style-type:none;
+	margin: 0px 0px 25px 0px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_portfolio_filter li{
+	display:inline-block;
+	margin:0px 55px 13px 0px;
+}
+.aola_tm_portfolio_filter li:last-child{margin-right: 0px;}
+.aola_tm_portfolio_filter li a{
+	text-decoration:none;
+	font-size:16px;
+	font-weight:600;
+	color:#000;
+	display: inline-block;
+	font-family: "Quicksand";
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.aola_tm_portfolio_filter li a.current{color: #fa2856;}
+
+/* PORTFOLIO LIST */
+
+.aola_tm_portfolio_list{
+	list-style-type:none;
+	margin: 0px 0px 0px -30px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_portfolio_list > li{
+	width:33.3333%;
+	float:left;
+	position:relative;
+	margin: 0px 0px 30px 0px;
+	padding-left: 30px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_portfolio_list .list_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_portfolio_list .list_inner .image_wrap{
+	position: relative;
+	width: 100%;
+	float: left;
+}
+.aola_tm_portfolio_list .list_inner .image_wrap .image_inner{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.aola_tm_portfolio_list .list_inner .image_overlay{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: rgba(0,0,0,.6);
+	z-index: 2;
+	
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+	
+	opacity: 0;
+	visibility: hidden;
+}
+.aola_tm_portfolio_list .image_definition{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 3;
+	
+	opacity: 0;
+	visibility: hidden;
+}
+.aola_tm_portfolio_list .image_definition .title a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	font-family: "Quicksand";
+	font-weight: 600;
+	display: inline-block;
+}
+.aola_tm_portfolio_list .link{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+}
+.aola_tm_portfolio_list .link a{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+.aola_tm_portfolio_list .list_inner:hover .image_inner{transform: scale(1.1,1.1) translateZ(0);} 
+.aola_tm_portfolio_list .list_inner:hover .image_overlay{
+	opacity: 1;
+	visibility: visible;
+}
+.aola_tm_portfolio_list .list_inner:hover .image_definition{
+	opacity: 1;
+	visibility: visible;
+}
+
+/*---------------------------------------------------*/
+/*	09) AOLA PORTFOLIO SINGLE
+/*---------------------------------------------------*/
+
+.aola_tm_portfolio_single_image{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 37px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_twice_box_wrap .detail_list{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding-top: 15px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_twice_box_wrap .detail_list ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.aola_tm_twice_box_wrap .detail_list ul li{margin: 0px;}
+.aola_tm_twice_box_wrap .detail_list ul li span{
+	display: inline-block;
+	min-width: 150px;
+}
+.aola_tm_twice_box_wrap .detail_list ul li .first{
+	color: #000;
+	font-weight: 600;
+}
+.aola_tm_twice_box_wrap .detail_list ul li .second{color: #000;}
+.aola_tm_pagination_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	margin-bottom: 177px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_pagination_wrap.portfolio{
+	align-items: center;
+	justify-content: space-between;
+}
+.aola_tm_pagination_wrap .left{width: 360px;}
+.aola_tm_pagination_wrap .right{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.aola_tm_pagination_wrap a{
+	text-decoration: none;
+	color: #000;
+	font-weight: 600;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+	
+}
+.aola_tm_pagination_wrap a:hover{color: #fa2856;}
+
+/*---------------------------------------------------*/
+/*	10)  AOLA NEWS
+/*---------------------------------------------------*/
+
+.aola_tm_news_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_news_wrap ul{
+	margin: 0px 0px 0px -30px;
+	list-style-type: none;
+}
+.aola_tm_news_wrap ul li{
+	margin: 0px 0px 37px 0px;
+	float: left;
+	width: 33.3333%;
+	padding-left: 30px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_news_wrap ul li .inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_news_wrap ul li .image_wrap{
+	float:left;
+	position: relative;
+	width: 100%;
+	margin-bottom: 36px;
+}
+.aola_tm_news_wrap ul li .image_wrap .image{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}	
+.aola_tm_news_wrap ul li .definitions_wrap{
+	padding: 0px 40px 50px 40px;
+	background-color: #f1f1f1;
+}
+.aola_tm_news_wrap ul li .date{margin-bottom: 5px;}
+.aola_tm_news_wrap ul li .date span{
+	color:#000;
+	text-transform: uppercase;
+	font-family: "Quicksand";
+	font-weight: 500;
+	font-size: 12px;
+}
+.aola_tm_news_wrap ul li .title{margin-bottom: 21px;}
+.aola_tm_news_wrap ul li .title h3{
+	color:#000;
+	line-height: 1.5;
+	font-size: 22px;
+	font-weight: 500;
+}
+.aola_tm_news_wrap ul li .title h3 a{
+	text-decoration: none;
+	color: #000;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.aola_tm_news_wrap ul li .title h3 a:hover{color: #fa2856;}
+.aola_tm_news_wrap ul li .definition{margin-bottom: 33px;}
+.aola_tm_news_wrap ul li .definition p{
+	color: #333;
+	line-height: 2.1;
+}
+.aola_tm_news_wrap ul li .read_more a{
+	color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    padding: 8px 35px;
+    display: inline-block;
+    font-family: "Quicksand";
+    font-weight: 600;
+    border-radius: 3px;
+	
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.aola_tm_news_wrap ul li .read_more a:hover{
+	color: #fff;
+	background-color: #fa2856;
+}
+.aola_tm_news_pagination{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 188px;
+}
+.aola_tm_news_pagination ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.aola_tm_news_pagination ul li{
+	margin: 0px 10px 0px 0px;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border-radius: 3px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.aola_tm_news_pagination ul li:hover{background-color: #fa2856;}
+.aola_tm_news_pagination ul li:nth-child(1) span{color: #fff;}
+.aola_tm_news_pagination ul li:nth-child(1){background-color: #fa2856;}
+.aola_tm_news_pagination ul li:hover a{color: #fff;}
+.aola_tm_news_pagination ul li a{
+	text-decoration: none;
+	color: #000;
+	display: block;
+	
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+}
+
+/*---------------------------------------------------*/
+/*	11) AOLA NEWS SINGLE
+/*---------------------------------------------------*/
+
+.aola_tm_news_single_image{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 55px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_news_single_image .inner{padding-top: 150px;}
+.aola_tm_news_single_definitions_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	margin-bottom: 90px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_news_single_definitions_wrap .leftbox{
+	width: 360px;
+	max-width: 360px;
+	padding-right: 40px;
+}
+.aola_tm_news_single_definitions_wrap .leftbox .image_holder{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 15px;
+}
+.aola_tm_news_single_definitions_wrap .leftbox .name_holder span{
+	color: #000;
+	font-weight: 600;
+	font-size: 16px;
+	font-family: "Quicksand";
+}
+.aola_tm_news_single_definitions_wrap .leftbox label{
+	color: #000;
+	font-weight: 600;
+	font-family: "Quicksand";
+}
+.aola_tm_news_single_definitions_wrap .leftbox .date span,
+.aola_tm_news_single_definitions_wrap .leftbox .category span{
+	padding-left: 10px;
+	font-weight: 400;
+	color: #000;
+}
+.aola_tm_news_single_definitions_wrap .rightbox{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	top: -15px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_news_single_definitions_wrap .rightbox .title_holder{margin-bottom: 25px;}
+.aola_tm_news_single_definitions_wrap .rightbox .title_holder h3{
+	color: #000;
+	font-size: 24px;
+}
+.aola_tm_news_single_definitions_wrap .rightbox .definition p{
+	color: #333;
+	margin-bottom: 38px;
+}
+.aola_tm_news_single_definitions_wrap .rightbox .definition p:last-child{margin-bottom: 27px;}
+.aola_tm_news_single_definitions_wrap .rightbox blockquote{
+	color: #000;
+	padding: 10px 0px 10px 20px;
+	margin-bottom: 38px;
+	border-left: 2px solid #000;
+	font-style: italic;
+}
+.aola_tm_news_single_definitions_wrap .rightbox .sharebox ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.aola_tm_news_single_definitions_wrap .rightbox .sharebox ul li{
+	margin: 0px;
+	display: inline-block;
+	position: relative;
+	left: -5px;
+}
+.aola_tm_news_single_definitions_wrap .rightbox .sharebox ul li a{
+	text-decoration: none;
+	color: #000;
+	margin-right: 7px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.aola_tm_news_single_definitions_wrap .rightbox .sharebox ul li a:hover{color: #fa2856;}
+.aola_tm_news_single_definitions_wrap .rightbox .sharebox ul li:last-child{margin-right: 0px;}
+.aola_tm_comment_contact{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 190px;
+	display: flex;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_comment_contact .left{
+	width: 360px;
+}
+.aola_tm_comment_contact .right{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.aola_tm_comment_contact .aola_tm_contact_wrap{
+	max-width: 100%;	
+	box-sizing: border-box;
+}
+.aola_tm_twice_box_wrap .contact_title{margin-bottom: 25px;}
+.aola_tm_twice_box_wrap .contact_title h3{
+	color: #000;
+	font-size: 25px;
+}
+.aola_tm_contact_wrap{
+	max-width: 830px;
+	height: auto;
+	margin: 0px auto;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_contact_wrap .title_holder{margin-bottom: 15px;}
+.aola_tm_contact_wrap .title_holder h3{
+	color: #000;
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+.aola_tm_contact_wrap .title_holder p{color: #333;}
+.aola_tm_contact_wrap .title_holder p span{position: relative;}
+.aola_tm_contact_wrap .title_holder p span:before{
+	position: absolute;
+	content: "*";
+	color: #000;
+	top: -12px;
+	right: -12px;
+}
+.aola_tm_contact_wrap .main_input_wrap,
+.aola_tm_contact_wrap .main_input_wrap .wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 0px !important;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_contact_wrap .main_input_wrap .wrap{margin-bottom: 30px;}
+.aola_tm_contact_wrap .main_input_wrap .wrap input{
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	color: #000;
+	padding: 0px !important;
+}
+.aola_tm_contact_wrap .main_input_wrap .wrap input:focus{
+	outline: none;
+	border-bottom-color: #000;
+}
+.aola_tm_contact_wrap .main_input_wrap .wrap textarea{
+	width: 100%;
+	height: 120px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	color: #000;
+	padding: 13px 0px 0px 0px !important;
+	margin-bottom: 8px;
+}
+.aola_tm_contact_wrap .main_input_wrap .wrap textarea:focus{
+	outline: none;
+	border-bottom-color: #000;
+}
+.aola_tm_contact_wrap .aola_tm_button{text-align: left;}
+.aola_tm_contact_wrap .aola_tm_button a{
+	color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    padding: 8px 35px;
+    display: inline-block;
+    font-family: "Quicksand";
+    font-weight: 600;
+    border-radius: 3px;
+	
+    -webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.aola_tm_contact_wrap .aola_tm_button a:hover{
+	background-color: #fa2856;
+	color: #fff;
+}
+.aola_tm_contact_wrap .empty_notice{
+	color: rgba(255,0,4,1.00);
+	margin-bottom: 7px;
+	display: none;
+}
+.aola_tm_contact_wrap .contact_error{color: rgba(255,0,4,1.00);}
+.aola_tm_contact_wrap .returnmessage{
+	color:#0064FF;
+	margin-bottom: 7px;
+}
+
+/*---------------------------------------------------*/
+/*	12) AOLA CONTACT
+/*---------------------------------------------------*/
+
+.aola_tm_twice_box_wrap .contact_text{margin-bottom: 30px;}
+.aola_tm_twice_box_wrap .contact_text p{color: #333;}
+.aola_tm_twice_box_wrap .short_info_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_twice_box_wrap .short_info_wrap ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.aola_tm_twice_box_wrap .short_info_wrap ul li{
+	margin: 0px 0px 20px 0px;
+	display: table;
+}
+.aola_tm_twice_box_wrap .short_info_wrap ul li:last-child{margin-bottom: 0px;}
+.aola_tm_twice_box_wrap .short_info_wrap ul li .inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	display: flex;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_twice_box_wrap .short_info_wrap .icon .svg{
+	color: #000;
+	width: 25px;
+	height: 25px;
+}
+.aola_tm_twice_box_wrap .short_info_wrap .definition{
+	position: relative;
+	top: -10px;
+	padding-left: 10px;
+}
+.aola_tm_twice_box_wrap .short_info_wrap .definition span{
+	color: #333;
+	font-family: "Quicksand";
+	font-weight: 500;
+	font-size: 15px;
+}
+.aola_tm_twice_box_wrap .short_info_wrap .definition p{color: #333;}
+.aola_tm_twice_box_wrap .short_info_wrap .definition a{
+	text-decoration: none;
+	color: #333;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.aola_tm_twice_box_wrap .short_info_wrap .definition a:hover{color: #fa2856;}
+.aola_tm_main_contact_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+	top: -15px;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aola_tm_main_contact_wrap .aola_tm_contact_wrap{
+	width: 100%;
+	max-width: 100%;
+}
+
+/*---------------------------------------------------*/
+/*	13) AOLA MEDIA QUERIES (FOR SMALL DEVIVES)
+/*---------------------------------------------------*/
+
+@media (max-width: 1200px) {
+	.aola_tm_twice_box_wrap .rightbox .team_list > ul > li{width: 50%;}
+}
+@media (max-width: 1040px) {
+	.aola_tm_trigger{display: block;}
+	.aola_tm_navigation_wrap .nav_list_wrap{display: none;}
+	.aola_tm_navigation_wrap .logo{position: relative;top:-1px;}
+	.aola_tm_navigation_wrap{padding: 30px 0px;background-color: rgba(255,255,255,.95);}
+	.aola_tm_portfolio_wrap{padding: 0px;}
+	.aola_tm_portfolio_home_wrap{padding: 0px 20px;}
+	.aola_tm_twice_box_wrap{display: block;}
+	.aola_tm_twice_box_wrap .leftbox{width: 100%;margin-bottom: 50px;}
+	.aola_tm_twice_box_wrap .rightbox{width: 100%;}
+	.aola_tm_news_wrap ul li{width: 50%;}
+}
+@media (max-width: 768px) {
+	.aola_tm_navigation_wrap{padding: 25px 0px;}
+	.aola_tm_home_title_wrap h3{font-size: 27px;}
+	.aola_tm_home_title_wrap .inner{padding-top: 135px;}
+	.aola_tm_home_title_wrap.index{margin-bottom: 150px;}
+	.aola_tm_home_title_wrap.portfolio{margin-bottom:  147px;}
+	.aola_tm_home_title_wrap{margin-bottom: 170px;}
+	.aola_tm_home_title_wrap.single{margin-bottom: 153px;}
+	.aola_tm_home_title_wrap.news{margin-bottom: 163px;}
+	.aola_tm_home_title_wrap.service{margin-bottom: 165px;}
+	.aola_tm_home_title_wrap.about{margin-bottom: 163px;}
+	.aola_tm_home_title_wrap.contact{margin-bottom: 150px;}
+	.aola_tm_twice_box_wrap .service_list_wrap ul li{width: 50%;}
+	.aola_tm_twice_box_wrap{margin-bottom: 150px;}
+	.aola_tm_twice_box_wrap.service{margin-bottom: 163px;}
+	.aola_tm_twice_box_wrap.single{margin-bottom: 165px;}
+	.aola_tm_twice_box_wrap.about{padding-top: 5px;margin-bottom: 145px;}
+	.aola_tm_portfolio_wrap{margin-bottom: 147px;}
+	.aola_tm_portfolio_home_wrap{margin-bottom: 160px;padding: 0px;}
+	.aola_tm_portfolio_list > li{width: 50%;}
+	.aola_tm_portfolio_filter li{margin-right: 30px;margin-bottom: 0px;}
+	.aola_tm_news_single_image .inner{padding-top: 137px;}
+	.aola_tm_news_wrap ul{margin: 0px;}
+	.aola_tm_news_wrap ul li{width: 100%;padding: 0px;}
+	.aola_tm_news_single_definitions_wrap{display: block;}
+	.aola_tm_news_single_definitions_wrap .leftbox{padding-right: 20px;margin-bottom: 50px;}
+	.aola_tm_short_contact_wrap .title h3{font-size: 27px;}
+	.aola_tm_short_contact_wrap{padding: 163px 20px 185px 20px;margin-bottom: 168px;}
+	.aola_tm_about_top_image{margin-bottom: 165px;}
+	.aola_tm_service_top_image{margin-bottom: 163px;}
+	.aola_tm_pagination_wrap{margin-bottom: 152px;}
+	.aola_tm_pagination_wrap .left{display: none;}
+	.aola_tm_news_pagination{margin-bottom: 163px;}
+	.aola_tm_footer_wrap{padding-bottom: 163px;}
+	.aola_tm_comment_contact{margin-bottom: 165px;}
+	.aola_tm_comment_contact .left{display: none;}
+	.aola_tm_twice_box_wrap.contact{margin-bottom: 150px;}
+	body{line-height: 2.3;}
+}
+@media (max-width: 480px) {
+	.aola_tm_navigation_wrap{padding: 20px 0px;}
+	.aola_tm_top_bar_wrap ul li{margin: 0px;}
+	.aola_tm_home_title_wrap h3{font-size: 24px;}
+	.aola_tm_home_title_wrap .inner{padding-top: 100px;}
+	.aola_tm_home_title_wrap.index{margin-bottom: 130px;}
+	.aola_tm_home_title_wrap.portfolio{margin-bottom:  132px;}
+	.aola_tm_home_title_wrap{margin-bottom: 150px;}
+	.aola_tm_home_title_wrap.single{margin-bottom: 130px;}
+	.aola_tm_home_title_wrap.news{margin-bottom: 138px;}
+	.aola_tm_home_title_wrap.contact{margin-bottom: 130px;}
+	.aola_tm_home_title_wrap.service{margin-bottom: 140px;}
+	.aola_tm_home_title_wrap.about{margin-bottom: 138px;}
+	.aola_tm_home_title_wrap.portfolio .inner{padding-top: 105px;}
+	.aola_tm_portfolio_wrap{margin-bottom: 122px;}
+	.aola_tm_footer_wrap{display: block;}
+	.aola_tm_footer_wrap .sharebox{padding-right: 0px;width: 100%;margin-bottom: 50px;}
+	.aola_tm_footer_wrap .copyright{width: 100%;text-align: left;}
+	.aola_tm_twice_box_wrap .rightbox .team_list > ul > li{width: 100%;padding: 0px;}
+	.aola_tm_twice_box_wrap.service{margin-bottom: 143px;}
+	.aola_tm_twice_box_wrap{margin-bottom: 130px;}
+	.aola_tm_twice_box_wrap.about{margin-bottom: 120px;}
+	.aola_tm_twice_box_wrap.single{margin-bottom: 145px;}
+	.aola_tm_twice_box_wrap .rightbox .team_list > ul{margin: 0px;}
+	.aola_tm_twice_box_wrap .service_list_wrap ul li{width: 100%;}
+	.aola_tm_twice_box_wrap .leftbox .title h3{font-size: 22px;}
+	.aola_tm_portfolio_home_wrap{margin-bottom: 130px;}
+	.aola_tm_portfolio_list > li{width: 100%;}
+	.aola_tm_portfolio_filter li{display: block;}
+	.aola_tm_short_contact_wrap .title h3{font-size: 24px;}
+	.aola_tm_short_contact_wrap .title{margin-bottom: 45px;}
+	.aola_tm_short_contact_wrap{padding: 138px 20px 162px 20px;}
+	.aola_tm_news_wrap{margin-bottom: 55px;}
+	.aola_tm_news_wrap ul li .definitions_wrap{padding: 0px 20px 50px 20px;}
+	.aola_tm_news_wrap ul li .title h3{font-size: 20px;}
+	.aola_tm_news_single_definitions_wrap .rightbox .title_holder h3{font-size: 22px;}
+	.aola_tm_news_single_image .inner{padding-top: 117px;}
+	.aola_tm_contact_wrap .title_holder h3{font-size: 22px;}
+	.aola_tm_twice_box_wrap .contact_title h3{font-size: 23px;}
+	.aola_tm_about_top_image{margin-bottom: 145px;}
+	.aola_tm_service_top_image{margin-bottom: 143px;}
+	.aola_tm_pagination_wrap{margin-bottom: 132px;}
+	.aola_tm_news_pagination{margin-bottom: 143px;}
+	.aola_tm_short_contact_wrap{margin-bottom: 143px;}
+	.aola_tm_comment_contact{margin-bottom: 145px;padding: 0px 10px;}
+	.aola_tm_twice_box_wrap.contact{margin-bottom: 130px;}
+	.aola_tm_footer_wrap{padding-bottom: 138px;}
+	body{line-height: 2.1;}
+}	
