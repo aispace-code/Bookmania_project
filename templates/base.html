@@ -17,10 +17,10 @@
 <title>BookMania</title>
 
 <!-- STYLES -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i|Quicksand:300,400,500,700" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/plugins.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
+<link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i|Quicksand:300,400,500,700'%}" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{% static 'css/plugins.css'%}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}" />
+<!--[if lt IE 9]> <script type="text/javascript" src="{% static 'js/modernizr.custom.js' %}"></script> <![endif]-->
 <!-- /STYLES -->
 
 </head>
@@ -35,16 +35,12 @@
 		<div class="aola_tm_navigation_wrap">
 			<div class="container">
 				<div class="navigation_inner">
-					<div class="logo">
-						<a class="dark_logo" href="index.html"><img src="img/logo/logo.png" alt="" /></a>
-					</div>
 					<div class="nav_list_wrap">
 						<div class="menu">
 							<ul>
 								<li><a href="index.html">Главная</a></li>
 								<li><a href="about.html">О нас</a></li>
 								<li><a href="catalog.html">Каталог книг</a></li>
-								<li><a href="blog.html">Новости</a></li>
 								<li><a href="contact.html">Наши контакты</a></li>
 							</ul>
 						</div>
@@ -65,7 +61,6 @@
 					<li><a href="index.html">Главная</a></li>
                     <li><a href="about.html">О нас</a></li>
                     <li><a href="catalog.html">Каталог книг</a></li>
-                    <li><a href="blog.html">Новости</a></li>
                     <li><a href="contact.html">Наши контакты</a></li>
 				</ul>
 			</div>
@@ -77,25 +72,9 @@
     {% endblock %}
 
 <div class="aola_tm_section">
-			<div class="container">
-				<div class="aola_tm_footer_wrap">
-					<div class="sharebox">
-						<label class="wow fadeIn" data-wow-duration="1.2s">Следите за нами!</label>
-						<div class="share_wrap wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.4s">
-							<ul>
-								<li><a href="#"><i class="xcon-facebook"></i></a></li>
-								<li><a href="#"><i class="xcon-twitter"></i></a></li>
-								<li><a href="#"><i class="xcon-linkedin"></i></a></li>
-								<li><a href="#"><i class="xcon-pinterest"></i></a></li>
-								<li><a href="#"><i class="xcon-gplus"></i></a></li>
-								<li><a href="#"><i class="xcon-instagram"></i></a></li>
-								<li><a href="#"><i class="xcon-behance"></i></a></li>
-							</ul>
-						</div>
-					</div>
 					<div class="copyright">
 						<label class="wow fadeIn" data-wow-duration="1.2s">Copyright</label>
-						<p class="wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.4s">&copy; 2018. All rights are reserved.</p>
+						<p class="wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.4s">&copy; 2020. All rights are reserved.</p>
 					</div>
 				</div>
 			</div>
@@ -106,10 +85,10 @@
 <!-- / WRAPPER ALL -->
 
 <!-- SCRIPTS -->
-<script src="js/jquery.js"></script>
-<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
-<script src="js/plugins.js"></script>
-<script src="js/init.js"></script>
+<script src="{% static 'js/jquery.js' %}"></script>
+<!--[if lt IE 10]> <script type="text/javascript" src="{% static 'js/ie8.js' %}"></script> <![endif]-->
+<script src="{% static 'js/plugins.js' %}"></script>
+<script src="{% static 'js/init.js' %}"></script>
 <!-- /SCRIPTS -->
 
 </body>
