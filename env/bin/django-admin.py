@@ -1,4 +1,4 @@
-#!/Users/aisuluukydyralieva/Desktop/bookmania/env/bin/python3
+#!/home/chyngyz/Рабочий стол/proj/Bookmania_project/env/bin/python3
 from django.core import management
 
 if __name__ == "__main__":
