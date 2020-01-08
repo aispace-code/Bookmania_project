@@ -1,15 +1,17 @@
 
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
     <!-- CONTENT -->
-	<div class="aola_tm_content">
+{% for post in posts %}
+<div class="aola_tm_content">
 		<div class="container">
 			<div class="aola_tm_home_title_wrap single">
 				<div class="inner">
 					<h3>
 						<span class="animate">
-							<span>American the<br /></span>
-						</span>
-						<span class="animate">
-							<span>Most Famous Shepherd</span>
+							<span><br>{{ post.title }}<br/></span>
 						</span>
 					</h3>
 				</div>
@@ -20,28 +22,28 @@
 				<div class="aola_tm_twice_box_wrap single">
 					<div class="leftbox">
 						<div class="title portfolio">
-							<h3>Project Details</h3>
+							<h3>О книге: </h3>
 						</div>
 						<div class="detail_list">
 							<ul>
 								<li>
-									<span class="first">Category :</span>
-									<span class="second">Animals</span>
+									<span class="first">Пользователь: </span>
+									<span class="second">{{ post.author }}</span>
 								</li>
 								<li>
-									<span class="first">Client :</span>
-									<span class="second">Anna Barbea</span>
+									<span class="first">Номер: </span>
+									<span class="second">{{ post.number }}</span>
 								</li>
 								<li>
-									<span class="first">Images by :</span>
-									<span class="second">Melvin</span>
+									<span class="first">Тип: </span>
+									<span class="second">{{ post.status }}</span>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<div class="rightbox">
 						<div class="about_text_wrap">
-							<p>Aussies were developed on ranches in the western United States, and were seen as early as the 1800s. These pups are very focused, and need lots of attention, pawsitive reinforcement, and exercise. They can still be found working on the ranch, but also work as guide dogs, therapy dogs, drug detectors, and of course, man’s best friend. People often seek them out for their incredibly strong hunting abilities. They are excellent swimmers, too, so a nice lake or pool is A-OK! However, they do require regular exercise and would fit best with an active family.</p>
+							<p>{{ post.body }}</p>
 						</div>
 					</div>
 				</div>
@@ -71,42 +73,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="aola_tm_section">
-			<div class="container">
-				<div class="aola_tm_footer_wrap">
-					<div class="sharebox">
-						<label class="wow fadeIn" data-wow-duration="1.2s">Follow Us</label>
-						<div class="share_wrap wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.4s">
-							<ul>
-								<li><a href="#"><i class="xcon-facebook"></i></a></li>
-								<li><a href="#"><i class="xcon-twitter"></i></a></li>
-								<li><a href="#"><i class="xcon-linkedin"></i></a></li>
-								<li><a href="#"><i class="xcon-pinterest"></i></a></li>
-								<li><a href="#"><i class="xcon-gplus"></i></a></li>
-								<li><a href="#"><i class="xcon-instagram"></i></a></li>
-								<li><a href="#"><i class="xcon-behance"></i></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="copyright">
-						<label class="wow fadeIn" data-wow-duration="1.2s">Copyright</label>
-						<p class="wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.4s">&copy; 2018. All rights are reserved.</p>
-					</div>
-				</div>
-			</div>
+
 		</div>
 	</div>
 	<!-- /CONTENT -->
-	
-</div>
-<!-- / WRAPPER ALL -->
-	
-<!-- SCRIPTS -->
-<script src="js/jquery.js"></script>
-<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
-<script src="js/plugins.js"></script>
-<script src="js/init.js"></script>
-<!-- /SCRIPTS -->
-
-</body>
-</html>
+{% endfor %}
+{% endblock %}
